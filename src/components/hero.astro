@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import image from "assets/image.webp";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
@@ -9,8 +9,9 @@ import { Icon } from "astro-icon/components";
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
+      src={image}
+      style="border-radius: 12px;"
+      alt=""
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -20,23 +21,111 @@ import { Icon } from "astro-icon/components";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Ctrl+C
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+
+    <h2 class="font-bold text-3xl text-gray-800 mt-8">
+      About Us
+    </h2>
+
+    <p
+      class="text-lg text-slate-600 max-w-xl mt-1"
+      style="padding-right: 3rem">
+      We understand the challenges of navigating a
+      fast-paced, ever-changing work environment and the
+      impact it can have on mental health. Through
+      continuous learning, growth, and collaboration, we aim
+      to nurture talent and foster a collaborative spirit.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+
+    <p
+      class="text-lg mt-4 text-slate-600 max-w-xl"
+      style="padding-right: 3rem">
+      As a group of volunteers from various backgrounds in
+      the South African tech industry, we are dedicated to
+      creating a supportive space for individuals to develop
+      and navigate the challenges of the contemporary work
+      place.
+    </p>
+
+    <p
+      class="text-lg mt-4 text-slate-600 max-w-xl"
+      style="padding-right: 3rem">
+      We achieve this through podcasts, online talks,
+      in-person events and workshops by leveraging the
+      knowledge of domain experts who share their insights
+      with our community.
+    </p>
+
+    <h2 class="font-bold text-3xl text-gray-800 mt-8">
+      Current Projects
+    </h2>
+
+    <ul>
+      <li
+        class="flex items-center gap-3 text-neutral-800 mt-2">
+        <span>🤖</span>
+        <a
+          style="text-decoration: underline"
+          href="https://www.meetup.com/fedsa-community/"
+          >Front-end Development South Africa (FEDSA)</a
+        >
+      </li>
+
+      <li
+        class="flex items-center gap-3 text-neutral-800 mt-1">
+        <span>🎨</span>
+        <a
+          style="text-decoration: underline"
+          href="https://www.meetup.com/ZAPD-community/"
+          >South African Product Design (ZAPD)</a
+        >
+      </li>
+    </ul>
+
+    <li
+      class="flex items-center gap-3 text-neutral-800 mt-1">
+      <span>🧠</span>
+      <a
+        style="text-decoration: underline"
+        href="https://mhit.org.za/"
+        >Mental Health in Tech (MHIT)</a
+      >
+    </li>
+
+    <li
+      class="flex items-center gap-3 text-neutral-800 mt-1">
+      <span>🌐</span>
+      <a
+        style="text-decoration: underline"
+        href="https://mhit.org.za/">Mechanical Ink</a
+      >
+    </li>
+
+    <li
+      class="flex items-center gap-3 text-neutral-800 mt-1">
+      <span>🍄</span>
+      <a
+        style="text-decoration: underline"
+        href="https://schalkneethling.substack.com/s/the-mycelium-network-podcast"
+        >Mycelium Network</a
+      >
+    </li>
+  </div>
+</main>
+<!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
         href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon
+          class="text-white w-5 h-5"
+          name="bx:bxs-cloud-download"
+        />
 
-         Download for Free
+        Download for Free
       </Link>
       <Link
         size="lg"
@@ -45,9 +134,10 @@ import { Icon } from "astro-icon/components";
         href="https://github.com/surjithctly/astroship"
         class="flex gap-1 items-center justify-center"
         target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
+        <Icon
+          class="text-black w-4 h-4"
+          name="bx:bxl-github"
+        />
+        GitHub Repo
       </Link>
-    </div>
-  </div>
-</main>
+    </div> -->
